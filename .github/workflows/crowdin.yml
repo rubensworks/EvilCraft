@@ -1,0 +1,29 @@
+name: "Crowdin Sync Translations"
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  synchronize-with-crowdin:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Crowdin action
+        uses: crowdin/github-action@v2
+        with:
+          upload_sources: true
+          upload_translations: true
+          download_translations: true
+          localization_branch_name: l10n_crowdin_translations
+          create_pull_request: true
+          pull_request_title: 'New Translations'
+          pull_request_body: 'New translations by [Crowdin GitHub Action](https://github.com/crowdin/github-action)'
+          commit_message: 'Add translations through Crowdin'
+        env:
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+          CROWDIN_PROJECT_ID: ${{ secrets.CROWDIN_PROJECT_ID }} # A numeric ID, found at https://crowdin.com/project/<projectName>/tools/api
+          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}

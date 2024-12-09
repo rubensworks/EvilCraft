@@ -1,0 +1,44 @@
+project_id_env: CROWDIN_PROJECT_ID
+api_token_env: CROWDIN_PERSONAL_TOKEN
+base_path: .
+
+preserve_hierarchy: true
+
+files:
+  - source: src/main/resources/assets/evilcraft/lang/en_us.json
+    translation: src/main/resources/assets/evilcraft/lang/%locale_with_underscore%.json
+    excluded_target_languages:
+      - en
+    skip_untranslated_strings: true
+    languages_mapping:
+        locale_with_underscore:
+            af: af_za
+            ar: ar_sa
+            ca: ca_es
+            cs: cs_cz
+            da: da_dk
+            de: de_de
+            el: el_gr
+            en-US: en_us
+            es-ES: es_es
+            fi: fi_fi
+            fr: fr_fr
+            he: he_il
+            hu: hu_hu
+            it: it_it
+            ja: ja_jp
+            ko: ko_kr
+            nl: nl_nl
+            "no": no_no
+            pl: pl_pl
+            pt-BR: pt_br
+            pt-PT: pt_pt
+            ro: ro_ro
+            ru: ru_ru
+            sr: sr_sp
+            sv-SE: sv_se
+            tr: tr_tr
+            uk: uk_ua
+            vi: vi_vn
+            zh-CN: zh_cn
+            zh-TW: zh_tw
