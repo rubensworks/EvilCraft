@@ -1,28 +1,20 @@
 {
-  "_comment": "General",
-  "itemGroup.evilcraft": "EvilCraft",
   "general.evilcraft.info.empty": "Tom",
   "general.evilcraft.description": "En ondskefull mod för Minecraft.",
-
-  "_comment": "Sound names",
   "subtitles.evilcraft.effect.vengeancebeam.base": "Hämndstråle",
   "subtitles.evilcraft.effect.vengeancebeam.start": "Hämndstråle laddas upp",
-  "subtitles.evilcraft.effect.vengeancebeam.stop": "Hämndstråle stoppas",
+  "subtitles.evilcraft.effect.vengeancebeam.stop": "Hämndstråle avtar",
   "subtitles.evilcraft.mob.vengeancespirit.ambient": "Hämndande morrar",
   "subtitles.evilcraft.mob.vengeancespirit.death": "Hämndande dör",
   "subtitles.evilcraft.effect.box.beam": "Stråle från evigt förseglad låda",
   "subtitles.evilcraft.effect.page.flipsingle": "Sida vänds",
   "subtitles.evilcraft.effect.page.flipmultiple": "Sidor vänds",
-
-  "_comment": "Blocks",
-  "block.evilcraft.inner_block.info": "Block: %s",
   "block.evilcraft.blood": "Blod",
   "block.evilcraft.poison": "Gift",
   "block.evilcraft.blood_chest": "Blodkista",
   "block.evilcraft.blood_chest.info": "Reparerar föremål.",
   "block.evilcraft.blood_infuser": "Blodpåfyllare",
   "block.evilcraft.dark_ore": "Mörk malm",
-  "block.evilcraft.dark_ore.info.custom": "Kan hittas mellan y-nivåerna %s och %s.",
   "block.evilcraft.dark_block": "Mörkt block",
   "block.evilcraft.blood_stain": "Blodstänk",
   "block.evilcraft.blood_stain.info": "Ett blodstänk som skapas när en entitet faller till sin död.",
@@ -103,13 +95,8 @@
   "block.evilcraft.infested_nether_netherrack": "Angripen netherrack",
   "block.evilcraft.infested_nether_nether_bricks": "Angripen nethertegel",
   "block.evilcraft.infested_nether_soul_sand": "Angripen själsand",
-
-  "_comment": "Multiblock",
-  "multiblock.evilcraft.colossalbloodchest.error.prefix": "EvilCraft",
   "multiblock.evilcraft.colossalbloodchest.error.prefix.info": "Struktursfel Colossal Blood Chest multiblock structure error  ",
   "multiblock.evilcraft.colossalbloodchest.error.unexpected": "Struktursfel Unexpected Colossal Blood Chest structure error.  ",
-
-  "_comment": "Items",
   "item.evilcraft.werewolf_bone": "Varulvsben",
   "item.evilcraft.flesh_werewolf": "Varulvskött",
   "item.evilcraft.flesh_humanoid": "Humanoidkött",
@@ -161,7 +148,6 @@
   "item.evilcraft.kineticator_repelling.info.area": "Bortstötningsområde: %s",
   "item.evilcraft.vengeance_ring": "Hämndring",
   "item.evilcraft.vengeance_ring.info": "Kan dra till sig eller frammana hämndandar.\\nShift-högerklicka för att aktivera/inaktivera ringen.",
-  "item.evilcraft.vengeance_ring.info.status": "Status: %s",
   "item.evilcraft.vengeance_focus": "Hämndfokus",
   "item.evilcraft.vengeance_focus.info": "Högerklicka för att aktivera strålen som fryser hämndandar.",
   "item.evilcraft.vengeance_pickaxe": "Hämndhacka",
@@ -251,7 +237,6 @@
   "item.evilcraft.environmental_accumulation_core": "Miljöackumulatorkärna",
   "item.evilcraft.environmental_accumulation_core.info": "Fås när en vanlig miljöackumulator förstörs.",
   "item.evilcraft.mace_of_destruction": "Destruktionsklubba",
-  "item.evilcraft.garmonbozia": "Garmonbozia",
   "item.evilcraft.garmonbozia.info": "\"Smärta och sorg\"",
   "item.evilcraft.poison_bottle": "Giftflaska",
   "item.evilcraft.vengeance_essence": "Hämndessens",
@@ -268,27 +253,15 @@
   "item.evilcraft.poisonous_libelle_spawn_egg": "Skapelseägg för giftig libelle",
   "item.evilcraft.vengeance_spirit_spawn_egg": "Skapelseägg för hämndande",
   "item.evilcraft.controlled_zombie_spawn_egg": "Skapelseägg för kontrollerad zombie",
-
   "item.evilcraft.powerable.set_power": "Ändrade styrkan till %s",
   "item.evilcraft.powerable.info.power": "Styrka: %s",
   "item.evilcraft.powerable.info": "Shift-högerklicka för att ändra styrkenivå.",
-
-  "_comment": "Fluids",
-  "fluid.evilcraft.blood": "Blod",
-  "fluid.evilcraft.poison": "Gift",
-
-  "_comment": "Weather container info",
   "weather_container.evilcraft.empty": "Tom",
   "weather_container.evilcraft.clear": "Inte ett moln så långt ögat kan nå",
   "weather_container.evilcraft.rain": "Regnet det bara öser ner",
   "weather_container.evilcraft.lightning": "Blixtar och dunder, magiska under",
-
-  "_comment": "Controls",
-  "key.categories.evilcraft": "Evil Craft",
   "key.evilcraft.fart": "Aktivera/inaktivera fisande",
   "key.evilcraft.exaltedCrafting": "Öppna överlägsen tillverkare",
-
-  "_comment": "Entities",
   "entity.evilcraft.werewolf": "Varulv",
   "entity.evilcraft.poisonous_libelle": "Giftig libelle",
   "entity.evilcraft.netherfish": "Netherfisk",
@@ -296,8 +269,6 @@
   "entity.evilcraft.controlled_zombie": "Kontrollerad zombie",
   "entity.evilcraft.broom_entity": "Kvast",
   "entity.minecraft.villager.evilcraft.werewolf": "Varulvsbybo",
-
-  "_comment": "Enchantments",
   "enchantment.evilcraft.breaking": "Brytningsförbannelse",
   "enchantment.evilcraft.breaking.desc": "Dina verktyg går sönder snabbare.",
   "enchantment.evilcraft.life_stealing": "Livstöld",
@@ -308,13 +279,9 @@
   "enchantment.evilcraft.poison_tip.desc": "Varelser du skadar blir förgiftade.",
   "enchantment.evilcraft.vengeance": "Hämndförbannelse",
   "enchantment.evilcraft.vengeance.desc": "Hämndandar skapas när ett verktyg används.",
-
-  "_comment": "Chat messages",
   "chat.evilcraft.command.farting_enabled": "Fisande har aktiverats",
   "chat.evilcraft.command.farting_disabled": "Fisande har inaktiverats",
   "chat.evilcraft.boss_display.charge": "%s laddar upp",
-
-  "_comment": "Death messages",
   "death.attack.evilcraft.die_without_any_reason": "%1$s dog utan någon uppenbar anledning!",
   "death.attack.evilcraft.distorted": "%1$s kunde inte längre hantera all distorsion",
   "death.attack.evilcraft.spiked": "%1$s dödades av spikar",
@@ -322,18 +289,9 @@
   "death.attack.evilcraft.broom": "%1$s kördes på av en kvast",
   "death.attack.evilcraft.broom.player": "%1$s kördes på av %s på en kvast",
   "death.attack.evilcraft.vengeance_beam": "%1$s avdunstades av en hämndstråle",
-
-  "_comment": "Biomes",
   "biome.evilcraft.degraded": "Degradering",
-
-  "_comment": "Potion Effects",
   "effect.evilcraft.paling": "Bleknad",
   "effect.evilcraft.paling.postfix": "Bleknadsbrygd",
-  "potion.potency.2": "III",
-  "potion.potency.3": "IV",
-  "potion.potency.4": "V",
-
-  "_comment": "Achievements",
   "advancement.evilcraft.evil_source": "En källa till sann ondska",
   "advancement.evilcraft.evil_source.desc": "Skaffa en kopia av \"Mörkrets ursprung\" genom att kasta in en bok i avvikelsen som uppstår när ett djur matas med ett förmörkat äpple.",
   "advancement.evilcraft.fart": "Lär dig att fisa",
@@ -356,8 +314,6 @@
   "advancement.evilcraft.power_crafting.desc": "Tillverka en överlägsen tillverkare.",
   "advancement.evilcraft.cannibal": "Kannibalism",
   "advancement.evilcraft.cannibal.desc": "Ät lite humanoidkött",
-
-  "_comment": "Gui",
   "gui.exalted_crafting": "Överlägsen tillverkare",
   "gui.exalted_crafting.clear": "Rensa",
   "gui.exalted_crafting.balance": "Balansera ut",
@@ -368,8 +324,6 @@
   "gui.waila.block_info_config": "Shift för blockinformation",
   "gui.waila.broom_info_config": "Kvastinformation",
   "gui.nei.fluids": "Vätskor",
-
-  "_comment": "Broom parts",
   "broom.evilcraft.shiftinfo": "<Shift för kvastinformation>",
   "broom.parts.evilcraft.shiftinfo": "<Shift för information om kvastdelar>",
   "broom.parts.evilcraft.rod_bare": "Tomt skaft",
@@ -417,15 +371,11 @@
   "broom.parts.evilcraft.cap_metal_cobalt": "Metallknopp av kobolt",
   "broom.parts.evilcraft.cap_metal_manyullyn": "Metallknopp av manyullyn",
   "broom.parts.evilcraft.cap_slime": "Slemkubsknopp",
-
-  "_comment": "Broom part types",
   "broom.parts.evilcraft.type": "Typ: %s",
   "broom.parts.evilcraft.types": "Delar:",
   "broom.parts.evilcraft.type.rod": "Skaft",
   "broom.parts.evilcraft.type.brush": "Borste",
   "broom.parts.evilcraft.type.cap": "Knopp",
-
-  "_comment": "Broom modifiers",
   "broom.modifiers.evilcraft.shiftinfo": "<Shift för kvastinformation>",
   "broom.modifiers.evilcraft.type": "Modifierare",
   "broom.modifiers.evilcraft.types": "Modifierare:",
@@ -434,7 +384,6 @@
   "broom.modifiers.evilcraft.type.speed": "Hastighet",
   "broom.modifiers.evilcraft.type.acceleration": "Accelerering",
   "broom.modifiers.evilcraft.type.maneuverability": "Styrning",
-  "broom.modifiers.evilcraft.type.levitation": "Levitation",
   "broom.modifiers.evilcraft.type.damage": "Kollisionsskada",
   "broom.modifiers.evilcraft.type.particles": "Partiklar",
   "broom.modifiers.evilcraft.type.flame": "Flamma",
@@ -442,7 +391,6 @@
   "broom.modifiers.evilcraft.type.bouncy": "Studs",
   "broom.modifiers.evilcraft.type.witherer": "Vissnande",
   "broom.modifiers.evilcraft.type.hungerer": "Hunger",
-  "broom.modifiers.evilcraft.type.kamikaze": "Kamikaze",
   "broom.modifiers.evilcraft.type.withershield": "Withersköld",
   "broom.modifiers.evilcraft.type.sturdyness": "Hårdhet",
   "broom.modifiers.evilcraft.type.luck": "Tur",
@@ -450,217 +398,143 @@
   "broom.modifiers.evilcraft.type.swimming": "Simförmåga",
   "broom.modifiers.evilcraft.type.icy": "Kyla",
   "broom.modifiers.evilcraft.type.sticky": "Klister",
-
-  "_comment": "Subtitles",
-  "subtitles.evilcraft.effect.vengeancebeam.base": "Hämndstråle",
-  "subtitles.evilcraft.effect.vengeancebeam.start": "Hämndstråle laddas upp",
-  "subtitles.evilcraft.effect.vengeancebeam.stop": "Hämndstråle avtar",
-  "subtitles.evilcraft.mob.vengeancespirit.ambient": "Hämndande morrar",
-  "subtitles.evilcraft.mob.vengeancespirit.death": "Hämndande dör",
-  "subtitles.evilcraft.effect.box.beam": "Stråle från evigt förseglad låda",
-  "subtitles.evilcraft.effect.page.flipsingle": "Sida vänds",
-  "subtitles.evilcraft.effect.page.flipmultiple": "Sidor vänds",
-
-  "_comment": "------ Origins of Darkness contents ------",
   "info_book.evilcraft.section.main": "Mörkrets ursprung",
-  "info_book.evilcraft.tag_index": "&oIndex&r",
-
   "info_book.evilcraft.preface": "Förord",
   "info_book.evilcraft.preface.text1": "Det verkar som att det finns mer saker i denna värld än vad man tror. Det finns saker som jag kommer att skildra i denna bok, där mina skrifter över all förvärvad kunskap om det okända finns nedskrivet. Jag har upptäckt ett mörkt levnadssätt med varelserna i denna värld. “&oVilken ondska kan komma ifrån detta?&r”, frågar jag mig själv. “&oOndska finns överallt&r”, svarar en mörk röst inom mig. Jag har upptäckt några hemligheter inom denna vida värld av dumma bybor och zombier, någonting som deras ynkliga sinnen aldrig kommer begripa.",
   "info_book.evilcraft.preface.text2": "Det finns många slags olika magier i denna värld, men sorten som du kan åstadkomma med &4blod&0 verkar vara annorlunda. Jag har sett folk som skär sig själva för att skaffa &4blod&0, men jag föredrar att spara min styrka för andra saker...",
-
   "info_book.evilcraft.structure": "&oStruktur&r",
   "info_book.evilcraft.structure.text1": "Denna bok är uppdelad i två större delar, för de två åldrarna av ondska som jag gillar att klassificera allting i. Jag betraktar allting innan jag kom till denna värld som den &1första åldern&0 och mitt livsverk i den &1andra åldern&0.",
   "info_book.evilcraft.structure.text2": "Du kan navigera i denna bok genom att klicka på pilarna längst ned. Hoppa mellan avsnitt genom att Shift-klicka på pilarna istället för att bläddra en sida åt gången. I början på alla större avsnitt finns en innehållsförteckning med länkar till underavsnitten för att navigera snabbare. I recepten kan du klicka på föremålen som förklaras i boken för att snabbt komma till motsvarande avsnitt. Det finns även en knapp längst upp till vänster som tar dig till det överordnade avsnittet. Knappen längst upp till höger tar dig tillbaka till den senast besökta sidan varje gång du klickar på den.",
-
-  "_comment": "--- First Age ---",
   "info_book.evilcraft.first_age": "Första åldern",
-
-  "_comment": "- A Strange New World -",
   "info_book.evilcraft.first_age.new_world": "En märklig ny värld",
   "info_book.evilcraft.first_age.new_world.introduction": "Introduktion",
   "info_book.evilcraft.first_age.new_world.introduction.text": "Jag har upptäckt flera märkliga nya saker på sistone. Allting avger en spöklik vibb, ju längre jag är i närheten av dessa saker, desto mer känns det som att jag vänjer mig vid det... Alla dessa saker är kanske inte användbara just nu, men jag kanske har några idéer om hur man kan använda dem för någonting annat.",
-
   "info_book.evilcraft.first_age.new_world.dark_ore": "Mörk malm",
   "info_book.evilcraft.first_age.new_world.dark_ore.text": "Denna värld är fylld av alla slags möjliga resurser, vilket jag har vetat mycket länge... Men idag har jag gjort en ny upptäckt, det finns en malm i denna värld som avger en aning mörkt sken. Den får mig att tänka på värdefulla ädelstenar, men jag känner en mycket fördunklad närvaro inom dem. När jag slår på dem med en järnhacka verkar det vara minimalkravet för att få några av dessa ädelstenar. Det verkar också dyka upp något slags märkligt damm när jag bryter dem. Jag är säker på att jag kommer hitta någon användning för detta damm inom snar framtid. Det verkar som att förtrollningen \"Rikedom\" ökar chansen att få detta damm.",
-
   "info_book.evilcraft.first_age.new_world.darkened_apple": "Förmörkade äpplen",
   "info_book.evilcraft.first_age.new_world.darkened_apple.text": "Om du läser denna bok kanske du redan har stött på detta föremål. Om man kombinerar ett &1äpple&0 och en &1mörk ädelsten&0 får man ett speciellt &1äpple&0 som orsakar stora mängder skada en stund när det äts. Om entiteten dör av denna effekt kommer den lämna efter sig någon slags avvikelse. Jag har ännu inte upptäckt någon användning för detta fenomen...",
-
   "info_book.evilcraft.first_age.new_world.evil_dungeon": "Ondskefulla fängelsehålor",
   "info_book.evilcraft.first_age.new_world.evil_dungeon.text": "Under mina grottutforskningar stöter jag ibland på dessa hotfulla rum med &4blod&0fläckar överallt. Alla dessa &4blod&0spår är förmodligen från strider mellan tidigare utforskare och de oräkneliga monster som bor i dessa fängelsehålor.",
-
   "info_book.evilcraft.first_age.new_world.dark_temple": "Mörka tempel",
   "info_book.evilcraft.first_age.new_world.dark_temple.text1": "Det verkar finnas vissa strukturer i denna värld som byggdes av någon slags uråldrig civilisation som kunde fylla särskilda miljökrafter inuti föremål. Dessa processer verkar dock bryta ned miljöns naturliga balans ju mer denna process används. Det är förmodligen anledningen varför civilisationen inte längre finns kvar här...",
   "info_book.evilcraft.first_age.new_world.dark_temple.text2": "Med hjälp av &1mörka ädelstenar&0 kunde jag förbättra befintliga &1glasflaskor&0 för att kunna hålla miljöväder. Om man lägger en &1väderbehållare&0 i kärnan på ett sådant tempel kommer det nuvarande vädret absorberas in i flaskan.",
   "info_book.evilcraft.first_age.new_world.dark_temple.text3": "Jag upptäckte också att vissa föremål kan förstärkas med hjälp av åskvädrets speciella egenskaper. Dessa föremål kan också förstärkas när de träffas av blixten, men det verkar mycket osannolikt att kunna förutse var blixten ska slå ned, eller...?",
   "info_book.evilcraft.first_age.new_world.dark_temple.text4": "Dessa tempel verkar avge någon slags energi. Kan jag hitta något sätt att utforska detta och upptäcka nya tempel i världen?",
-
   "info_book.evilcraft.first_age.new_world.weather_container_benefits": "Fördelar med väderbehållare",
   "info_book.evilcraft.first_age.new_world.weather_container_benefits.text": "Väder som ryms i dessa flaskor kan återaktiveras när flaskorna kastas mot någonting. Men istället för att förstöra dem kanske det är mer intressant att använda dem för att tillverka flera andra utmärkta föremål.",
-
   "info_book.evilcraft.first_age.new_world.biome_extract": "Biomextrakt",
   "info_book.evilcraft.first_age.new_world.biome_extract.text1": "Vår värld består av &1biomer&0, många olika varianter finns. Tyvärr kan vi inte välja platsen för dessa &1biomer&0 eller åtminstone inte alltid.",
   "info_book.evilcraft.first_age.new_world.biome_extract.text2": "En av förmågorna hos &1miljöackumulatorn&0 är att den kan ta emot speciella &1flaskor med biomextrakt&0 som den kan fulla med &1biomen&0 som maskinen för tillfället är placerad i. Dessa flaskor kan kastas var som helst på marken för att omvandla området till den angivna biomen.",
   "info_book.evilcraft.first_age.new_world.biome_extract.text3": "En stor nackdel med &1miljöackumulator&0 är att den kommer bryt ned sin biom med tiden, så flaskorna som kommer ut från den kommer bli ganska värdelösa. Om det ändå fanns ett alternativt sätt att tillverka dessa &1biomextrakt&0 utan sidoeffekter...",
-
   "info_book.evilcraft.first_age.new_world.libelle": "Giftig libelle",
   "info_book.evilcraft.first_age.new_world.libelle.text": "Det verkar som att det finns några nya varelser i denna värld. Denna varelse ser ut som en stor slags trollslända. På dagen är den en ganska fredfull varelse, men låt dig inte luras för om du skulle komma för nära denna insekt kommer den försöka förgifta dig i självförsvar. Men när mörkret faller blir denna best förslavad av en uråldrig ondska och börjar döda allting i sin väg. Jag kan skatta mig lycklig att de inte har något annat sätt att attackera än att aktivt leta upp mig på natten för att komma och förgifta mig. Jag lyckades döda en hel del av dessa irriterande saker och skar ut några intressanta giftsäckar från deras kroppar. Jag slängde dem i en &1vattenhink&0 och vattnet absorberar giftet riktigt bra när jag kastar i fyra av dessa. Jag har sedan länge gjort detsamma med &lgiftiga potatisar&r. Det kan komma till användning i nödfall för att försvara min onda lya... jag menar mitt hus. Jag döpte denna varelse efter det nederländska ordet för dess art, eftersom jag inte vill blanda ihop den med vanliga trollsländor, utav självklara anledningar...",
-
   "info_book.evilcraft.first_age.new_world.werewolf": "Varulvar",
   "info_book.evilcraft.first_age.new_world.werewolf.text": "Medan jag utforskade denna värld har jag vilat i många byar. I en av byarna som jag vilade i bodde en säregen kille. Jag började prata med honom och mycket snart insåg jag att han inte var intresserad av smaragder som de andra byborna. Han började istället ställa fler och fler frågor om den mörka malmen jag hade upptäckt och vi började pratade i timtal. Han var så ivrig att lägga sina vantar på dem och andra föremål som jag hade upptäckt att vi byteshandlade resten av dagen. När natten kom tog han mig till sitt hus i byn och sade att jag var välkommen att spendera natten i hans gästrum. Jag svarade att jag redan hade hyrt ett rum på det lokala värdshuset, men tackade ändå honom för sin gästvänlighet. När jag kröp ned i sängen på värdshuset kastade jag en sista blick på månen, som jag vanligtvis gör innan jag somnar, och såg att det var en fin fullmåne. När jag stängde mina ögon hörde jag plötsligt ett plågat skrik följt av ett varglikt morrande. Hela byn tittade ut genom sina fönster och fick se en lång varg som gick på baktassarna. Alla skakade av rädsla, förutom jag som utan fruktan eller tvivel drog min trogna dolk och gick till anfall. Det var en riktigt stark varelse och jag tog lite av hans päls som ett minne av denna strid... Men när jag vaknade nästa morgon för att avsluta byteshandeln från gårdagen hade min säregna vän försvunnit. Det fanns klomärken överallt och &4blod&0stänk på golvet i hans hus. Jag undrar fortfarande om den konstiga vargen åt upp honom... eller om han i själva verket var en varulv, som byborna kallpratar om... Det verkar som att jag kan omvandla föremålen som den tappade till vanliga föremål genom att placera dem i en &1arbetsbänk&0.",
-
   "info_book.evilcraft.first_age.new_world.nether_fish": "Netherfiskar",
   "info_book.evilcraft.first_age.new_world.nether_fish.text": "En gång när jag besökte nether upptäckte jag ett &1netherrack&0block som var lite hårdare att bryta än vanligt. När jag väl lyckades bryta blocket hoppade en liten varelse fram och började attackera mig. Den lyckades antända mig så att jag tog lite skada, men som tur lyckades jag döda den utan någon större möda.",
-
-  "_comment": "- Relics -",
   "info_book.evilcraft.first_age.relics": "Reliker",
-
   "info_book.evilcraft.first_age.relics.humanoid_flesh": "Humanoidkött",
   "info_book.evilcraft.first_age.relics.humanoid_flesh.text": "Du kanske aldrig har märkt det tidigare, men när spelare dör tappar de en del av sitt kött. Det verkar vara farligt att äta det, men det är kanske säkrare att äta det på natten. Jag skulle däremot inte rekommendera att äta ditt eget kött för det är riktigt äckligt. Försök att äta en av dina vänner istället!",
-
   "info_book.evilcraft.first_age.relics.enchantments": "Förtrollningar",
   "info_book.evilcraft.first_age.relics.enchantments.breaking.text": "&l&nBrytningsförbannelse&r&NDenna förtrollning finns i tre nivåer, det verkar som att den är raka motsatsen till förtrollningen oförstörbar. Detta verkar knappast särskilt användbart, eller hur? Jag kanske bör hitta ett sätt att få bort den.",
   "info_book.evilcraft.first_age.relics.enchantments.life_stealing.text": "&l&nLivstöld&r&NNär de tre nivåerna av denna förtrollning tillämpas på offensiva vapen låter de dig stjäla liv från dina motståndare.",
   "info_book.evilcraft.first_age.relics.enchantments.poison_tip.text": "&l&nGiftspets&r&NNär du tillämpar lite gift på dina vapen har du en chans att förgifta dina motståndare. Denna förtrollning finns i tre nivåer. Det verkar som att du kan göra en enkel version av denna förtrollning genom att lägga till ett giftigt material på en vanlig bok.",
   "info_book.evilcraft.first_age.relics.enchantments.unusing.text": "&l&nOanvändbarhet&r&NJag började bli trött på att mina favoritverktyg gick sönder varje gång jag inte var uppmärksam. Därför uppfann jag en ny förtrollning som gör verktyg oanvändbara när de håller på att gå sönder, vilket ger mig tillräckligt mycket tid för att reparera dem till dess forna glans.",
   "info_book.evilcraft.first_age.relics.enchantments.vengeance.text": "&l&nHämndförbannelse&r&NVerktyg med denna förtrollning kommer att skapa hämndandar när de används.",
-
-  "_comment": "- Items -",
   "info_book.evilcraft.first_age.items": "Föremål",
-
   "info_book.evilcraft.first_age.items.dark_tank": "Mörka tankar",
   "info_book.evilcraft.first_age.items.dark_tank.text1": "Med lite &1järn&0, några &1mörka ädelstenar&0 och en &1glas&0bit kan man bygga en stark behållare som kan hålla vätskor. Det är möjligt att placera dessa tankar någonstans eller hålla dem i ditt förråd.",
   "info_book.evilcraft.first_age.items.dark_tank.text2": "När den placeras någonstans kan du högerklicka på den, vilket ger den ett lilafärgat sken och öppnar ett hål i botten på tanken som kan automatiskt fylla tankar, föremålsbehållare och spelare som håller i behållare under den.",
   "info_book.evilcraft.first_age.items.dark_tank.text3": "Om du Shift-högerklickar med tanken i handen när du inte siktar på ett block (eftersom du då skulle placera tanken) kommer ett specialläge aktiveras för att automatiskt försöka fylla alla behållare som du för tillfället håller i om de kan bära vätskan.",
   "info_book.evilcraft.first_age.items.dark_tank.text4": "Det ser ut som att de kan hålla omkring sexton hinkar. Om det är för lite för dig framstår det som om dessa tankar kan expanderas genom att placera flera stycken i en arbetsbänk, ingen vätska verkar förloras i processen.",
-
   "info_book.evilcraft.first_age.items.dark_spike": "Spikar",
   "info_book.evilcraft.first_age.items.dark_spike.text": "Med en &1mörk ädelsten&0 och en &1järntacka&0 kunde jag skapa vassa och tåliga &1spikar&0. Varelser verkar inte gilla dem speciellt mycket...",
-
   "info_book.evilcraft.first_age.items.spiked_plate": "Spikplattor",
   "info_book.evilcraft.first_age.items.spiked_plate.text1": "Några &1spikar&0 och en &1platta&0 resulterar i en platta som skadar alla varelser som går på den. Jag och mina kollegor verkar dock inte ta någon skada. Krafterna hos den &1mörka ädelstenen&0 verkar se till att döda varelser släpper samma saker som när de dödas av en spelare.",
   "info_book.evilcraft.first_age.items.spiked_plate.text2": "För din bekvämlighet verkar de också avge en redstonesignal när en varelse tar skada.",
-
   "info_book.evilcraft.first_age.items.spikey_claws": "Spikklor",
   "info_book.evilcraft.first_age.items.spikey_claws.text1": "Ingenting är mer irriterande än att byta plats på verktyg när man försöker bryta block och sedan helt plötsligt måste behöva slåss mot monster.",
   "info_book.evilcraft.first_age.items.spikey_claws.text2": "Om du kombinerar några &1spikar&0 kan du bryta nästan alla mjuka material riktigt snabbt. Samtidigt kan man attackera varelser med tillräckligt mycket styrka.",
-
   "info_book.evilcraft.first_age.items.potentia_sphere": "Potenssfärer",
   "info_book.evilcraft.first_age.items.potentia_sphere.text": "När flera glänsande alldagliga föremål kombineras resulterar det i en sfär som verkar besitta några häftiga krafter som jag kanske kan upptäcka ett sätt att behärska inom snart framtid. Det ser ut som kraften kan omvändas genom att använda några &1mörka ädelstenar&0.",
-
   "info_book.evilcraft.first_age.items.dull_dust": "Trist damm",
   "info_book.evilcraft.first_age.items.dull_dust.text": "När lite &1socker&0 och &1krut&0 kombineras resulterar det i ett konstigt damm som för tillfället inte verkar vara speciellt användbart, varav namnet. Men detta kan ändras en dag.",
-
   "info_book.evilcraft.first_age.items.obscured_glass": "Grumligt glas",
   "info_book.evilcraft.first_age.items.obscured_glass.text": "En del kanske tycker att vanligt &1glas&0 är för ljust. När lite glas kombineras med en &1mörk ädelsten&0 kan man skapa en speciell glastyp som nästan reducerar allt genomträngande ljus. Märkligt nog kan jag fortfarande se igenom glaset...",
-
   "info_book.evilcraft.first_age.items.exalted_crafter": "Överlägsen tillverkare",
   "info_book.evilcraft.first_age.items.exalted_crafter.text1": "Arbetsbänkar kan ibland vara opraktiska när man är långt hemifrån. Det ser ut som att &1krossade mörka ädelstenar&0 har kraften att tillverka saker inuti ditt förråd! Om man fäster en kista på den får man ett enkelt internt förråd, t.o.m. en &1enderkista&0 ser ut att fungera. Avancerade användare kanske gläder sig över detta föremål, då det kan bindas till ett kortkommando. Använd samma kortkommando när gränssnittet är öppet för att rensa ditt förråd och håll ned Shift tillsammans med kortkommandot för att jämnt fördela alla föremål i rutan. Det finns en knapp som låter dig växla mellan att returnera målen när du tar bort föremål med Shift från tillverkningsrutan. Du kan välja mellan det inre föremålsförrådet eller ditt spelarförråd.",
   "info_book.evilcraft.first_age.items.exalted_crafter.text2": "Om den träffas av blixten verkar den bindas till verkligheten så att den inte kan förstöras eller försvinna när de släpps ned på marken.",
-
   "info_book.evilcraft.first_age.items.display_stand": "Stativ",
   "info_book.evilcraft.first_age.items.display_stand.text1": "Detta lilla block kan visa upp dina favoritföremål och -block. Det verkar ha stöd för alla trätyper och kan placeras i vilken rotation du vill. Du kan lägga till och ta bort föremål via rör under- eller ovanifrån.",
   "info_book.evilcraft.first_age.items.display_stand.text2": "Interaktion från blockets alla andra sidor kommer att be överlåtas till själva föremålet, så du kan interagera med dess förråd, vätskor, energi, etc.",
-
-  "_comment": "- Items -",
   "info_book.evilcraft.first_age.vengeance_spirits": "Hämndandar",
-
   "info_book.evilcraft.first_age.vengeance_spirits.introduction": "Efter att monster dör",
   "info_book.evilcraft.first_age.vengeance_spirits.introduction.text1": "Andra tycker att det är konstigt, men jag tittar alltid noga när bestar dör. Jag har upptäckt att de för det mesta avger någon slags märklig mörklila aura som snabbt bleknar bort igen.",
   "info_book.evilcraft.first_age.vengeance_spirits.introduction.text2": "Jag upptäckte att jag kan använda en del av den &1krossade mörka ädelstenen&0 för att bygga en ring som låter mig se auror från varelser som jag dödar, men det ser ut som att de kan se mig också. De försöker alltid följa efter mig och när de kommer i kontakt med mig utdelar de lite skada efter att sedan gå upp i rök.",
   "info_book.evilcraft.first_age.vengeance_spirits.introduction.text3": "När jag aktiverar ringen ger den mig några otroliga krafter men detta verkar dra till sig och förarga några andar, men de flesta andar är oigenkännliga av någon anledning...",
-
   "info_book.evilcraft.first_age.vengeance_spirits.catching_spirits": "Hur man fångar andar",
   "info_book.evilcraft.first_age.vengeance_spirits.catching_spirits.text1": "På en del av mina äventyr upptäckte jag några konstiga lila lådor som innehöll några distorterade andar. Det ser ut som att dessa andar fångades för länge sedan och har brutits ned sedan dess. Jag vet dock inte om man kan återställa dem till sin ursprungliga form.",
   "info_book.evilcraft.first_age.vengeance_spirits.catching_spirits.text2": "Jag lyckades demontera dessa lådor för att själv kunna tillverka dem. Under tiden upptäckte jag också hur man fryser andar som dessa lådor kan absorbera. Jag förbättrade &1hämndringen&0 med denna teknologi för att skapa ett &1hämndringsfokus&0 som kan användas för att sikta på målandar och fånga dem. Jag kanske kan använda dessa fångade andar för någonting senare...",
-
   "info_book.evilcraft.first_age.vengeance_spirits.spirit_protection": "Skydd mot andar",
   "info_book.evilcraft.first_age.vengeance_spirits.spirit_protection.text1": "Dessa andar kan orsaka ganska mycket skada om man inte är försiktig. Jag har märkt att dessa andar verkar irriteras av &1mörka ädelstenar&0, men de ignorerar ändå känslan om de får syn på mig. Kraften hos eld och en stor mängd &1mörka ädelstenar&0 verkar dock ändra sättet andarna attackerar. Istället för att ta skada kommer man nu bara bli lite mer hungrig, vilket kanske är ett bättre alternativ.",
   "info_book.evilcraft.first_age.vengeance_spirits.spirit_protection.text2": "Ett helt annat sätt skydda sig från andar är att bli osynlig. Det ser ut som att &1spektrumsglasögonen&0 låter dig se alla andar utan att de kan se dig, såvida de redan inte är ute efter din själ. Detta kräver dock lite material som inte är från denna värld för att kunna tillverka dem. Jag kanske stöter på dem senare.",
-
-  "_comment": "--- Second Age ---",
   "info_book.evilcraft.second_age": "Andra åldern",
-
-  "_comment": "- Blood Extraction -",
   "info_book.evilcraft.second_age.blood_extraction": "Blodextraktion",
   "info_book.evilcraft.second_age.blood_extraction.text1": "Med några &1spikar&0 lyckades jag göra ett enkelt verktyg för att få lite &4blod&0 från olika platser. När du dödar vissa bestar kommer detta föremål fyllas på med &4blod&0 när den ligger någonstans i ditt förråd. Ibland kan du stötta på några &4blod&0stänk på marken. Med ett enkelt Shift-högerklick läggs lite av &4blodet&0 i din extraherare. Dessa &4blod&0stänk verkar bildas när någonting faller till sin död från en hög höjd, detta kan komma väl till pass en dag...",
   "info_book.evilcraft.second_age.blood_extraction.text2": "Ett enkelt högerklick med detta föremål placerar ut en hink med &4blod&0 på marken.",
   "info_book.evilcraft.second_age.blood_extraction.text3": "Detta kommer vara användbart tills jag hittar något mindre manuellt sätt att få tag på lite &4blod&0.",
   "info_book.evilcraft.second_age.blood_extraction.text4": "Som standard är storleken på dessa extraherare lite begränsade. Men det verkar som att jag bara kan kombinera flera &1blodextraherare&0 i en tillverkningsruta för att öka kapaciteten och den kan även kombineras med &1mörka tankar&0 för mer lagringskapacitet.",
-
-  "_comment": "- Powers of Blood -",
   "info_book.evilcraft.second_age.powers_of_blood": "Blodets krafter",
   "info_book.evilcraft.second_age.powers_of_blood.text1": "Alla vet att &4blod&0 är nyckeln till allt levande. Genom att kombinera de magiska egenskaperna hos &1mörka ädelstenar&0 och det vitaliserande &4blodet&0 kunde jag uppfinna några nya fantastiska verktyg och maskiner. Några av mina kollegor säger att jag är lite för entusiastisk om denna upptäckt. Jag antar att de inte är tillräckligt öppensinnade.",
   "info_book.evilcraft.second_age.powers_of_blood.text2": "&1Mörka ädelstenar&0 verkar vara villiga att ta emot &4blod&0. När man kastar en ädelsten i en &4blod&0pöl bilder det en &1mörk energiädelsten&0. Observera att du kommer behöva minst fem källblock med &4blod&0, som du kommer behöva göra minst en gång. I nästa kapitel kommer jag förklara hur man tillverkar &1mörka energiädelstenar&0 billigt.",
   "info_book.evilcraft.second_age.powers_of_blood.text3": "Som vi alla vet kommer &4blod&0 torka ut efter ett tag när det befinner sig i ett torrt område. Om man bryter &1förhårdnat blod&0 med en hacka eller händerna omvandlas det till vanligt &4blod&0 igen. Om man bryter &1förhårdnat blod&0 med ett &1tändstål&0 får man &1förhårdnade blodskärvor&0 som kan komma till hands senare. Det verkar som att dessa skärvor också kan fås när man tillagar ett block med &1förhårdnat blod&0, om du på något sätt kan få tag på det... kanske en silkesvante kan hjälpa?",
   "info_book.evilcraft.second_age.powers_of_blood.text4": "Det verkar som att &1kondenserat blod&0 finns på en del sällsynta platser. De kan infogas i alla maskiner som tar emot &4blod&0 för att få en halv hink extra &4blod&0.",
-
-  "_comment": "- Blood Infusion -",
   "info_book.evilcraft.second_age.blood_infusion": "Blodinfusion",
-
   "info_book.evilcraft.second_age.blood_infusion.blood_infusion_core": "Blodinfusionskärnor",
   "info_book.evilcraft.second_age.blood_infusion.blood_infusion_core.text": "Detta är en av de mest väsentliga upptäckterna som baseras på &4blod&0. Alldagliga föremål kan fyllas med &4blod&0 för att bilda riktigt speciella och intressanta egenskaper. Möjligheterna är oändliga, så länge du inte är rädd för att tänka utanför ramarna.",
-
   "info_book.evilcraft.second_age.blood_infusion.blood_chest": "Blodkistor",
   "info_book.evilcraft.second_age.blood_infusion.blood_chest.text": "Mitt första försök att fylla föremål med &4blod&0 resulterade i en enkel kista som verktyg kan bada i. Detta bad får skadan på verktygen att försvinna långsamt. Det finns dock ett litet problem där verktygen ibland får dåliga effekter, t.ex. förtrollningen &1brytningsförbannelse&0. Jag kommer definitivt hitta ett annat sätt att rena dessa verktyg för att bli av med dessa dåliga effekter.",
-
   "info_book.evilcraft.second_age.blood_infusion.blood_infuser": "Blodpåfyllare",
   "info_book.evilcraft.second_age.blood_infusion.blood_infuser.text1": "Efter att ha lyckats reparera föremål var jag säker på att jag kunde ta saker och ting till nästa nivå. Föremål som kan ta emot &4blod&0, som de &1mörka tankarna&0 jag introducerade tidigare, fylls med &4blod&0 när den placeras i denna maskin. Andra specifika föremål verkar omvandlas på ett speciellt sätt när de fylls med &4blod&0, här är en översiktlig lista över föremål som kan fyllas. Ge denna maskin en redstonesignal för att pausa alla pågående processer.",
   "info_book.evilcraft.second_age.blood_infusion.blood_infuser.text2": "Denna maskin låter dig äntligen göra &1mörka energiädelstenar&0 mycket lättare och mycket billigare.",
-
   "info_book.evilcraft.second_age.blood_infusion.undead_tree": "Odöda träd",
   "info_book.evilcraft.second_age.blood_infusion.undead_tree.text1": "Jag lyckades återuppliva döda plantor, träden som växer från denna process är minst sagt anmärkningsvärd. De verkar avsöndra lite blod om de har vuxit naturligt, men plantorna som avges verkar fortfarande vara döda av någon anledning. Om träet kombineras med en mörk ädelsten resulterar det i några pinnar som kommer bli användbara någon dag.",
   "info_book.evilcraft.second_age.blood_infusion.undead_tree.text2": "Att döda en planta är lika enkelt som att klippa ett levande i en tillverkningsruta. &oVäxter det där trädet i öknen?&r",
   "info_book.evilcraft.second_age.blood_infusion.undead_tree.text3": "Pinnar som görs utav detta trä verkar alltid rikta den lättare änden i en viss riktning när man släpper de på marken. Pekar de någonstans?",
-
   "info_book.evilcraft.second_age.blood_infusion.advanced_blood_infusion": "Avancerad blodinfusion",
   "info_book.evilcraft.second_age.blood_infusion.advanced_blood_infusion.text1": "Efter att jag hade byggt min första &1blodpåfyllare&0 började jag tänka på några optimeringar för att göra maskinen både snabbare och effektivare. Med hjälp av &1krossade mörka ädelstenar&0 kunde jag bygga materialiserade &1löften&0 som &1blodpåfyllaren&0 faktiskt verkar kunna fungera med. Det ser ut som om maskinen är levande på något sätt...",
   "info_book.evilcraft.second_age.blood_infusion.advanced_blood_infusion.text2": "Om du fyller en &1skål med tomma löften&0 med detta lila pulver och fyller den med &4blod&0 blir den en &1skål med löften&0 av en viss styrka. Kombinera detta med en reaktant och en löftesmottagare av valfri mineral som kan skapas med en betydelsefull mängd &4blod&0 blir det ett &1löfte&0 av en särskild typ. &1Löften om uthållighet&0 kan skapas genom att använda organiska reaktanter som låter maskinen (och kanske andra också) hålla fler &1löften&0 och mer &4blod&0. Dessutom ökar den det möjliga infusionsreceptet. &1Löften om hastighet&0 används för att öka maskinens hastighet, medan &1löften om produktivitet&0 reducerar mängden &4blod&0 som krävs för att bearbeta ett föremål.",
-
   "info_book.evilcraft.second_age.blood_infusion.advanced_blood_infusion_recipes": "Fler blodinfusionsrecept",
   "info_book.evilcraft.second_age.blood_infusion.advanced_blood_infusion_recipes.text": "På grund av dessa nya &1löften om uthållighet&0 ser det ut som att en helt ny värld har öppnat sig med att fylla föremål med blod.",
-
-  "_comment": "- Evolved Blood Machinery -",
   "info_book.evilcraft.second_age.evolved_blood_machinery": "Evolverat blodmaskineri",
-
   "info_book.evilcraft.second_age.evolved_blood_machinery.sanguinary_pedestal": "Blodpiedestaler",
   "info_book.evilcraft.second_age.evolved_blood_machinery.sanguinary_pedestal.text1": "Jag var trött på att knuffa varelser utför stup och sedan hämta &4blodet&0. Därför byggde jag en enhet som kan extrahera &4blod&0 från närliggande &1blodstänk&0 och placera det i närliggande tankar. Med några &1mörka energiädelstenar&0 kan man öka &4blod&0effektiviteten för denna &4blod&0extraktion.",
   "info_book.evilcraft.second_age.evolved_blood_machinery.sanguinary_pedestal.text2": "Om man placerar en &1spikplatta&0 ovanpå den kommer förmågan hos denna platta förbättras för att även kunna absorbera &4blodet&0 från bestarna den dödar och omdirigera det till piedestalen.",
-
   "info_book.evilcraft.second_age.evolved_blood_machinery.purifier": "Renare",
   "info_book.evilcraft.second_age.evolved_blood_machinery.purifier.text1": "Efter de olyckliga sidoeffekterna hos &1blodkistan&0 bestämde jag mig för att designa en ny maskin som kan ta bort dessa dåliga effekter från dina verktyg. Placera bara ett verktyg med en dålig effekt i detta block tillsammans med minst en &4blod&0hink för att ta bort denna effekt från föremålet.",
   "info_book.evilcraft.second_age.evolved_blood_machinery.purifier.text2": "En oavsiktlig fördel med denna maskin är att när den fylls helt och hållet med &4blod&0 och ett förtrollat föremål placeras i den tillsammans med en &1blodbok&0 (vilket bara är en &1bok&0 som har fyllts med &1blod&0) kommer en slumpartad förtrollning flyttas från föremålet till boken på bekostad av tre &1blodhinkar&0.",
   "info_book.evilcraft.second_age.evolved_blood_machinery.purifier.text3": "Nyligen har jag upptäckt att denna maskin även låter dig ta bort &1brygdeffekter&0 från levande varelser som sitter i den genom att fylla &1renaren&0 till bredden med &4blod&0 och ge den en &1tom flaska&0. Efter några sekunder kommer effekten rymmas i flaskan och varelsen kommer att frigöras från den.",
-
   "info_book.evilcraft.second_age.evolved_blood_machinery.entangled_chalice": "Förenade bägare",
   "info_book.evilcraft.second_age.evolved_blood_machinery.entangled_chalice.text1": "När du har så mycket erfarenhet som jag har med att fylla föremål med &4blod&0 kommer du märka att genom att bearbeta en tår från den fruktade &1ghasten&0 får du en mycket speciell tår. Den verkar dela alla egenskaper när den klyvs. Detta gav mig idéen att bygga den &lförenade bägaren&r med denna tår med målet att dela bägarens vätskeinnehåll med alla andra bägare som är byggd från samma tår.",
   "info_book.evilcraft.second_age.evolved_blood_machinery.entangled_chalice.text2": "Vanligtvis får du två bägare som delar sitt innehåll ifrån tillverkningsreceptet, men när man ersätter &4guldtackan&0 i mitten på receptet med en befintlig bägare kommer den expandera tårnätverket för att inkludera andra bägare.",
   "info_book.evilcraft.second_age.evolved_blood_machinery.entangled_chalice.text3": "Dessa bägare kan placeras i världen eller ligga i ditt förråd. Shift-högerklicka med den i handen för att aktivera omnifyllningläget som kommer oavbrutet försöka fylla alla behållare i ditt förråd med &4blod&0.",
-
   "info_book.second_age.evolved_blood_machinery.colossal_blood_chest": "Kolossala blodkistor",
   "info_book.second_age.evolved_blood_machinery.colossal_blood_chest.text1": "&1Blodkistor&0 är fantastiska! Kasta i dina trasiga saker så kommer de ut reparerade. En nackdel med att använda denna maskin är de enstaka dåliga effekterna som dina föremål kan få och det kan vara ganska irriterande att hela tiden behöva ta bort effekten med en &1renare&0.",
   "info_book.second_age.evolved_blood_machinery.colossal_blood_chest.text2": "Nackdelarna slutar faktiskt inte där. &1Blodkistan&0 har ett riktigt litet förråd att stoppa in dina föremål i, den är långsam, har en liten tankstorlek och är riktigt långsam. Det värsta av allt är att mina &1löften&0 inte ens kan användas för att förstärka maskinen!",
   "info_book.second_age.evolved_blood_machinery.colossal_blood_chest.text3": "Därför skapade jag den &1kolossala blodkistan&0! Den löser alla problems jag nämnde och som påföljd är denna maskin större än den vanliga varianten. På grund av dess enorma storlek blev jag tvungen att använda de märkliga krafterna hos &1odöda plankor&0 för att kunna hålla ihop strukturen.",
   "info_book.second_age.evolved_blood_machinery.colossal_blood_chest.text4": "Denna &1kolossala blodkista&0 bör endast användas om du har många föremål som du behöver reparera samtidigt. Anledningen till detta är att dess grund&4blod&0användning är högre än vad &1blodkistorna&0 använder, men ju fler föremål som repareras samtidigt desto effektivare blir &4blod&0användningen.",
   "info_book.second_age.evolved_blood_machinery.colossal_blood_chest.text5": "För att bygga detta, gör en &1ihålig&0 struktur av &1förstärkta odöda plankor&0 som är 3x3x3 stor. För att strukturen ska bildas behöver du precis en &1kolossal blodkista&0 någonstans i strukturväggen, se till att inte placera den i mitten av strukturen då den måste vara ihålig.",
-
   "info_book.second_age.evolved_blood_machinery.sanguinary_environmental_accumulator": "Blodig miljöackumulator",
   "info_book.second_age.evolved_blood_machinery.sanguinary_environmental_accumulator.text1": "Jag blev trött på att springa till &1mörka tempel&0 varje gång jag blev tvungen att uppfinna en miljö för att tillverka nya föremål. En dag var jag så less att jag tog isär en av maskinerna som stod där och till min förvåning föll ett nytt märkligt föremål ut ur den.",
   "info_book.second_age.evolved_blood_machinery.sanguinary_environmental_accumulator.text2": "Efter lite efterforskningar kunde jag använda detta nya föremål i en ny slags &1miljöackumulator&0 som kan köras på &4blod&0. Jag kunde dessutom göra denna maskin helt och hållet säker från dåliga effekter, så inga fler degraderade biomer eller slumpartade dödsfall genom att gå i närheten av dessa tempel.",
   "info_book.second_age.evolved_blood_machinery.sanguinary_environmental_accumulator.text3": "Denna maskin behöver en större mängd &4blod&0 för att fungera, därför behöver du &18&0 &4blod&0tankar av valfri typ runtomkring maskinen som på följande bild. Denna maskin kommer inte fungera utan dessa tankar och rökpuffar dyker upp där tankarna förväntas placeras.",
-
-  "_comment": "- Tools -",
   "info_book.evilcraft.second_age.tools": "Verktyg",
-
   "info_book.evilcraft.second_age.tools.broom": "Kvastar",
-
   "info_book.evilcraft.second_age.tools.broom.introduction": "Kvastgrunder",
   "info_book.evilcraft.second_age.tools.broom.introduction.text1": "&1Kvastar&0 används vanligtvis för att städa golvet. Jag har dock upptäckt att genom att skapa dem med &1krossade mörka ädelstenar&0 och &1mörka pinnar&0 samt fylla dem med en konstant ström av &4blod&0 kan de få några riktigt intressanta egenskaper. När man hanterar en &1kvast&0 på ett särskilt sätt verkar den kunna sväva. Efter att ha övat med den ett tag kunde jag kontrollera den tillräckligt för att kunna flyga i vilken riktning jag ville medan jag satt på den.",
   "info_book.evilcraft.second_age.tools.broom.introduction.text2": "&1Kvastar&0 består av tre huvuddelar. &1Skaftet&0 är grunden för din kvast, detta kommer att påverka dess huvudegenskaper. En &1borste&0 behövs för att kunna manövrera kvasten. Slutligen behövs en &1knopp&0 för att balansera din &1kvast&0.",
   "info_book.evilcraft.second_age.tools.broom.introduction.text3": "Alla möjliga &1kvast&0delar måste skapas med ett &1tomt skaft&0, &1tom borste&0 och &1tom knopp&0. Detta kan genomföras genom att kombinera dessa tre delar av valfritt material i en tillverkningsruta. Delar som skapas från olika material verkar ha olika egenskaper. Alla möjliga egenskaper förklaras i följande avsnitt efter att jag har gett en översikt över alla &1kvast&0delar.",
   "info_book.evilcraft.second_age.tools.broom.introduction.text4": "Se till att &1kvasten&0 alltid har tillräckligt mycket &4blod&0 när du flyger omkring, annars kommer &1kvasten&0 sakta ned avsevärt.",
-
   "info_book.evilcraft.second_age.tools.broom.modifiers": "Kvastmodifierare",
   "info_book.evilcraft.second_age.tools.broom.modifiers.text.intro": "I detta avsnitt listar jag upp alla modifieringseffekter som jag upptäckt under mina äventyr. De kan tillämpas på en befintlig &1kvast&0 genom att kombinera dem i en tillverkningsruta. När modifieraren väl har tillämpats finns det inget sätt att ta bort den från &1kvasten&0.",
   "info_book.evilcraft.second_age.tools.broom.modifiers.text.modifier_count": "&l&nMax. antal modifierare&r&NDet maximala antalet modifierare som en &1kvast&0 kan ha.",
@@ -683,81 +557,54 @@
   "info_book.evilcraft.second_age.tools.broom.modifiers.text.swimming": "&l&nSimförmåga&r&NDetta gör &1kvasten&0 lättare att manövrera i vätskor.",
   "info_book.evilcraft.second_age.tools.broom.modifiers.text.icy": "&l&nKyla&r&NSaktar ned entiteter som körs på.",
   "info_book.evilcraft.second_age.tools.broom.modifiers.text.sticky": "&l&nKlister&r&NAndra entiteter kan klibba fast sig på dig. Ju högre modifierare desto fler entiteter kan klibbas fast. Se till att ha en tillräckligt hög hårdhetsnivå för att kunna bära entiteterna!",
-
   "info_book.evilcraft.second_age.tools.broom.parts": "Kvastdelar",
   "info_book.evilcraft.second_age.tools.broom.parts.text1": "Olika material kan användas för att göra kvastdelar. Deras inforutor visar vilka basmodifierare som kommer finnas i &1kvasten&0 när den har tillverkats.",
-
   "info_book.evilcraft.second_age.tools.introduction": "Introduktion",
   "info_book.evilcraft.second_age.tools.introduction.text": "Föremål som använder &4blod&0 har för det mesta en inre behållare som kan hålla lite &4blod&0 och kan fyllas på med &1blodpåfyllaren&0 eller genom att aktivera autofyllningsläget på andra verktyg samt hålla föremålet i handen som ska fyllas. När du använder dessa föremål, kommer det förbruka lite &4blod&0. När föremålet har slut på &4blod&0 kommer den försöka ta &4blod&0 från andra behållare i ditt förråd eller sluta fungera om den inte kan hitta något sådant föremål.",
-
   "info_book.evilcraft.second_age.tools.blood_pearl_of_teleportation": "Teleporteringsblodpärla",
   "info_book.evilcraft.second_age.tools.blood_pearl_of_teleportation.text": "Vanliga &1enderpärlor&0 är roliga att använda för att teleportera omkring, men kan bli riktigt dyrt. Med hjälp av &4blod&0krafter kunde jag bygga en speciell &1enderpärla&0 som är helt och hållet återanvändbar på bekostnad av lite &4blod&0. Den verkar även vara mer potent än vanliga &1enderpärlor&0, som bara kan vara bra.",
-
   "info_book.evilcraft.second_age.tools.invigorating_pendant": "Stärkande halsband",
   "info_book.evilcraft.second_age.tools.invigorating_pendant.text": "Att bli av med dåliga brygdeffekter kan vara besvärligt. Detta halsband kan ta bort alla dåliga effekter på bekostnad av lite &4blod&0. Värre effekter kostar mer &4blod&0. Det verkar kunna släcka eld, men jag skulle inte rekommendera att simma i lava ännu. Du behöver en speciell slags tråd för att tillverka detta, som kan skapas genom att kombinera vanlig tråd med en liten guldklimp.",
-
   "info_book.evilcraft.second_age.tools.primed_pendant": "Uppladdade halsband",
   "info_book.evilcraft.second_age.tools.primed_pendant.text": "Efter att ha skapat det &1stärkande halsbandet&0 började jag fundera om det skulle kunna vara möjligt att inte bara ta bort, men också att lägga till effekter? Detta nya halsband kan hålla en &1brygd&0, och med &4blod&0 kommer den kontinuerligt tillämpa dess effekt på dig. Jag upptäckte att vissa effekter kostar mer &4blod&0 än andra. Du kan infoga nya &1brygder&0 genom att högerklicka med föremålet.",
-
   "info_book.evilcraft.second_age.tools.effortless_ring": "Mödolöshetens ring",
   "info_book.evilcraft.second_age.tools.effortless_ring.text": "Jag lyckades bygga en speciell ring som kan tillämpa &1löften&0 om &1produktivitet&0 och &1hastighet&0 vilket låter dig gå snabbare, hoppa högre och kliva upp på block lättare. Lägg detta föremål någonstans i ditt förråd för att få dess effekter. Observera att du kan undvika att kliva upp på block genom att hålla ned &oShift&r.",
-
   "info_book.evilcraft.second_age.tools.kineticator": "Magnetstavar",
   "info_book.evilcraft.second_age.tools.kineticator.text1": "Detta föremål kan dra till sig föremål och erfarenhetsklot inom ett bestämt område. Området kan ändras genom att högerklicka med den. Shift-högerklicka för att aktivera eller inaktivera den. Föremål i närheten som dras till dig konsumerar lite till nästintill inget &4blod&0 alls, men föremål som är längre bort kräver lite mer &4blod&0. Undvik att dra till dig föremål genom att smyga.",
   "info_book.evilcraft.second_age.tools.kineticator.text2": "Man får den motsatta versionen av detta föremål som kan stöta bort föremål och erfarenhetsklot om receptet inverteras.",
-
   "info_book.evilcraft.second_age.tools.sceptre_of_thunder": "Åskspiror",
   "info_book.evilcraft.second_age.tools.sceptre_of_thunder.text": "Jag känner mig konstigt nog fridfull i åskväder. Därför gjorde jag ett enkelt verktyg som kan skapa oväder. Detta föremål kan dock bara användas en gång, vilket gör det en ganska dyr process.",
-
   "info_book.evilcraft.second_age.tools.vengeance_pickaxe": "Hämndhackor",
   "info_book.evilcraft.second_age.tools.vengeance_pickaxe.text": "Jag har upptäckt ett sätt att återanvända teknologin från &1hämndringen&0 i en hacka. Detta verkar dock drastiskt reducera hackans hållbarhet. Men när den tillverkas har den en intressant sidoeffekt med förmågan att utlösa en enorm &1rikedom&0.",
-
   "info_book.evilcraft.second_age.tools.gemstone_torch": "Ädelstensfacklor",
   "info_book.evilcraft.second_age.tools.gemstone_torch.text": "Jag lyckades kombinera den &1brinnande ädelstenen&0 med en &1mörk pinne&0 för att skapa en speciell fackla som verkar absorbera alla &1hämndandar&0 som skapas inom dess upplysta område. Observera att alla andar som skapas utanför området kommer fortfarande kunna vandra omkring inom detta område, men en helt vanlig vägg bör kunna lösa problemet.",
-
   "info_book.second_age.tools.rejuvenated_flesh": "Föryngrande kött",
   "info_book.second_age.tools.rejuvenated_flesh.text": "&1Kött&0 kan kombineras med &1garmonbozia&0 för att få en oändlig matkälla. Du behöver dock fylla den med &4blod&0 för att kunna äta från det.",
-
-  "_comment": "- Weapons -",
   "info_book.evilcraft.second_age.weapons": "Vapen",
-
   "info_book.evilcraft.second_age.weapons.vein_sword": "Ådersvärdet",
   "info_book.evilcraft.second_age.weapons.vein_sword.text": "Har du lite &4blod&0 och är alltid ute och attackerar varelser? Varför inte använda detta svärd som ökar &4blodet&0 du får i din &1blodextraherare&0 när du dödar dem? Som en bonus får detta svärd &1plundring&0 när det tillverkas.",
-
   "info_book.evilcraft.second_age.weapons.mace_of_distortion": "Distorsionsklubban",
   "info_book.evilcraft.second_age.weapons.mace_of_distortion.text": "Håll ned högerklick med denna klubba för att bygga upp en cirkulär sfär runt den som, när den släpps, kommer att utlösa en kraft på alla andra entiteter inom sfären vilket knuffar tillbaka dem och orsakar lite skada så länge klubban har tillräckligt mycket &4blod&0. Shift-högerklicka för att växla mellan de olika energinivåerna, ju högre nivå desto mer skada orsakas, men det kostar samtidigt mer &4blod&0.",
-
   "info_book.evilcraft.second_age.weapons.necromancer_staff": "Nekromantikstaven",
   "info_book.evilcraft.second_age.weapons.necromancer_staff.text": "&1Zombier&0 verkar kunna kontrolleras när du har en slags skalle. När man fäster fast en sådan skalle på en stav upptäckte jag att jag kan frammana zombier som angriper alla entiteter jag siktar på under en begränsad tidsperiod.",
-
   "info_book.evilcraft.second_age.weapons.mace_of_destruction": "Destruktionsklubban",
   "info_book.evilcraft.second_age.weapons.mace_of_destruction.text": "Detta är en variation av &1distorsionsklubban&0, energin som frigörs från denna klubba är faktiskt en kraftfull explosion. Ju längre du laddar upp klubban, desto större blir explosionen. När klubbans energinivå ökar blir explosionens startkraft större, så du kan ladda upp ännu mer.",
-
-  "_comment": "- Abusing Spirits -",
   "info_book.evilcraft.second_age.abusing_spirits": "Att plåga andar",
-
   "info_book.evilcraft.second_age.abusing_spirits.infusing_spirits": "Fylla andar med blod",
   "info_book.evilcraft.second_age.abusing_spirits.infusing_spirits.text": "Att ha &1hämndandar&0 inuti lådor är i sig själv inte särskilt användbart. Jag hade en teori att det kan vara möjligt att återuppliva andarna med lite &4blod&0...",
-
   "info_book.evilcraft.second_age.abusing_spirits.spirit_furnace": "Andeugn",
   "info_book.evilcraft.second_age.abusing_spirits.spirit_furnace.text1": "Jag har äntligen lyckats återuppliva &1hämndandar&0, eller åtminstone delvis. De återupplivande andarna verkar vara för svaga för att leva i den riktiga världen, men de verkar dock ha alla egenskaper och material som riktiga varelser har. Det finns dock en användning för denna upptäckt, när man bygger en stor maskin som kan hålla den resulterande varelsen kommer den, på bekostnad av en större mängd &4blod&0, återuppliva anden och omedelbart tillaga den levande. Detta resulterar i att föremål från dessa varelser samlas upp i maskinens förråd. Det ser ut som att den &1evigt förseglade lådan&0 kan återanvändas hur många gånger som helst utan att anden någonsin kommer ut från den.",
   "info_book.evilcraft.second_age.abusing_spirits.spirit_furnace.text2": "Du kommer behöva ett gäng tåliga block, t.ex. &1mörkt tegel&0 som har fyllts med lite &4blod&0, för att se till att andarna inte kan komma ut. Du behöver bygga en kubisk struktur av dessa block så varelsen du vill återuppliva kan få plats inuti strukturen. T.ex. en zombie är ett block bred och två block hög, så du behöver en struktur som är tre block bred och fyra block hög med ett ihåligt utrymme inuti. Om varelsen du försöker inrymma är riktigt stor kanske du t.o.m. behöver bygga en struktur som har storleken 9 gånger 9, inte så pjåkigt!",
   "info_book.evilcraft.second_age.abusing_spirits.spirit_furnace.text3": "Du behöver också en &1andeugn&0 någonstans i strukturen. Detta block kan enkelt anslutas till andra förråd eller tankar på det vanliga sättet. Du kommer att se ett klart rött sken när du har monterat strukturen på rätt sätt.",
-
   "info_book.evilcraft.second_age.abusing_spirits.spirit_reanimator": "Andesåterupplivare",
   "info_book.evilcraft.second_age.abusing_spirits.spirit_reanimator.text1": "Efter att ha upptäckt &1andeugnen&0 var jag fortfarande beslutsam att återuppliva dessa andar. För att lösa problemet med ostabila varelser stoppade jag in dem i &1ägg&0 i ett försök att stabilisera dem. Denna process kräver fortfarande en väsentlig mängd &4blod&0 och naturligtvis ett tomt &1ägg&0.",
   "info_book.evilcraft.second_age.abusing_spirits.spirit_reanimator.text2": "På grund av den mer avancerade processen kommer andar förbrukas helt och hållet, så bara ett &1ägg&0 kan skapas per &1ande&0.",
   "info_book.evilcraft.second_age.abusing_spirits.spirit_reanimator.text3": "En del varelser verkar dock vägra att gå in i &1ägget&0, så deras andar blir förlorade för alltid.",
-
-  "_comment": "- Killing Spirits -",
   "info_book.evilcraft.second_age.after_death": "Efter döden",
-
   "info_book.evilcraft.second_age.after_death.spirit_killing101": "Andedräpande för nybörjare",
   "info_book.evilcraft.second_age.after_death.spirit_killing101.text1": "Efter att ha hanterat en och annan ande blev jag ganska bekväm med att vistas bland dem. På grund av detta upptäckte jag några av deras specifika karaktärsdrag, och även deras rädslor! De verkar inte gilla saker och ting som har någonting att göra med End.",
   "info_book.evilcraft.second_age.after_death.spirit_killing101.text2": "Jag irriterade mig på att de obehagliga andarna kunde attackera mig och att det inte fanns något sätt för mig att förhindra det. Därför undersökte jag ett sätt att skada dem. Det verkar som deras rädsla för End var svaret på frågan. Med hjälp av några \"End-reliker\" kunde jag omvandla mitt &1hämndfokus&0 till en förbättrad version som kan skada dem.",
   "info_book.evilcraft.second_age.after_death.spirit_killing101.text3": "Detta nya fokus verkar vara tillräckligt starkt för att \"döda\" alla andar helt och hållet. Till min förvåning släpper dem några föremål. Detta inkluderar några saker som deras gamla fysiska form bar omkring på och även lite spökligt damm, vilket ser ut att bära andens mörkaste delar och kan komma till användning i framtiden...",
-
-  "info_book.evilcraft.second_age.after_death.garmonbozia": "Garmonbozia",
   "info_book.evilcraft.second_age.after_death.garmonbozia.text1": "Föreställ dig att det var möjligt att ge liv åt de mörkaste tankarna och känslorna i denna värld. Detta kan visa sig vara en enorm källa av ofattbar styrka. Efter att ha upptäckt hämnd, mörker och blod tror jag att jag har fått tag på de viktigaste elementen.",
   "info_book.evilcraft.second_age.after_death.garmonbozia.text2": "När dessa element kombineras resulterar det i en märklig spirituell energi. Den är så världsfrämmande att den inte ens har ett eget material, vilket är anledningen till varför den är så gulprickig.",
   "info_book.evilcraft.second_age.after_death.garmonbozia.text3": "Mina undersåtar säger att jag har gått för långt med detta. Vilka dårar."
