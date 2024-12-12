@@ -13,31 +13,33 @@ apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'jacoco'
 
 import net.neoforged.gradle.common.tasks.PotentiallySignJar
+import net.darkhax.curseforgegradle.Constants
+import net.darkhax.curseforgegradle.TaskPublishCurseForge
 
 // Determine build number
 String build_number = "DEV" // this will be referenced as simply build_number from now on.
 if (System.getenv().BUILD_NUMBER)
     build_number = System.getenv().BUILD_NUMBER
-if (System.getenv().TRAVIS_BUILD_NUMBER)
-    build_number = System.getenv().TRAVIS_BUILD_NUMBER
 if (System.getenv().GITHUB_RUN_ID)
     build_number = System.getenv().GITHUB_RUN_NUMBER
-if (System.getenv().RELEASE || System.getenv().TRAVIS_TAG)
+if (System.getenv().RELEASE)
     build_number = "RELEASE"
 logger.lifecycle "BUILDING VERSION: " + build_number
 
-// Set mod details
-version = project.mod_version
-group = "org.cyclops.evilcraft"
-archivesBaseName = "EvilCraft-${project.minecraft_version}-neoforge"
+// Include build number in version
+if (build_number.equals("RELEASE"))
+    version = "${project.mod_version}"
+else
+    version = "${project.mod_version}-${build_number}"
+
 base {
-    archivesName = archivesBaseName
+    archivesName = "${mod_id}-${minecraft_version}-neoforge"
 }
 
-// Set Java details
-java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(java_version)
+}
 compileJava.options.compilerArgs << "-Xmaxerrs" << "9999"
-println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
 
 // Load secrets
 def getSecrets() {
@@ -47,7 +49,38 @@ def getSecrets() {
     }
     return props
 }
-Properties secrets = getSecrets();
+def getCurseforgeKey() {
+    if(secrets.curseforge_key) {
+        return secrets.curseforge_key
+    } else if(System.getenv().GITHUB_ACTIONS && System.getenv().CURSEFORGE_KEY_SECRET) {
+        return System.getenv().CURSEFORGE_KEY_SECRET
+    } else {
+        return "DUMMY"
+    }
+}
+def getModrinthKey() {
+    if(secrets.modrinth_key) {
+        return secrets.modrinth_key
+    } else if(System.getenv().GITHUB_ACTIONS && System.getenv().MODRINTH_KEY_SECRET) {
+        return System.getenv().MODRINTH_KEY_SECRET
+    } else {
+        return "DUMMY"
+    }
+}
+def getChangelog() {
+    if (System.getenv().RELEASE) {
+        return file("./resources/changelog/${project.minecraft_version}-${project.mod_version}.txt").getText();
+    } else {
+        return "Changes since last release: ${project.github_url}/compare/${project.minecraft_version}-${project.mod_version}...${System.getenv().GITHUB_SHA}"
+    }
+}
+//ext {
+    Properties secrets = getSecrets();
+    secrets.curseforgeKey = getCurseforgeKey();
+    secrets.modrinthKey = getModrinthKey();
+    secrets.changelog = getChangelog();
+    secrets.build_number = build_number;
+//}
 
 sourceSets {
     main
@@ -147,11 +180,6 @@ runs {
     }
 }
 
-if (build_number.equals("RELEASE"))
-    version = "${project.mod_version}"
-else
-    version = "${project.mod_version}-${build_number}"
-
 jar {
     archiveClassifier.set('slim')
     manifest {
@@ -235,45 +263,59 @@ artifacts {
     archives javadocJar
 }
 
-task publishCurseForge(type: net.darkhax.curseforgegradle.TaskPublishCurseForge) {
-    dependsOn(tasks.jar)
+// Replace properties in files
+processResources {
+    def expandProps = [
+            'mod_version'                           : mod_version,
+            'group'                                 : project.group, //Else we target the task's group.
+            'minecraft_version'                     : minecraft_version,
+            'mod_name'                              : mod_name,
+            'mod_author'                            : mod_author,
+            'mod_id'                                : mod_id,
+            'license'                               : license,
+            'issue_tracker_url'                     : issue_tracker_url,
+            'display_url'                           : display_url,
+            'description'                           : project.description,
+            'neoforge_version'                      : neoforge_version,
+            'neoforge_loader_version_range'         : neoforge_loader_version_range,
+            'neoforge_update_json_url'              : neoforge_update_json_url,
+            'java_version'                          : java_version,
+            'cyclopscore_version'                   : cyclopscore_version,
+            'cyclopscore_version_semver'            : cyclopscore_version.replaceAll("-.*\$", "")
+    ]
 
-    if(secrets.hasProperty("curseforge_key") && secrets.hasProperty("changelog")) {
-        apiToken = secrets.curseforge_key
-    } else if(System.getenv().GITHUB_ACTIONS && System.getenv().CURSEFORGE_KEY_SECRET) {
-        apiToken = System.getenv().CURSEFORGE_KEY_SECRET
-    } else {
-        apiToken = "DUMMY"
+    filesMatching(['pack.mcmeta', 'META-INF/mods.toml', 'META-INF/neoforge.mods.toml', 'mixins.*.json']) {
+        expand expandProps
     }
+    inputs.properties(expandProps)
+}
 
-    def projectId = "74610" // my project url is http://minecraft.curseforge.com/mc-mods/74610/
+task publishCurseForge(type: TaskPublishCurseForge) {
+    dependsOn(tasks.jar)
+    apiToken = secrets.curseforgeKey;
+    def mainFile = upload(project.curseforge_project_id, shadowJar)
+    mainFile.releaseType = secrets.build_number.equals("RELEASE") ? Constants.RELEASE_TYPE_RELEASE : Constants.RELEASE_TYPE_BETA
+    mainFile.changelogType = "text"
+    mainFile.changelog = secrets.changelog
+    mainFile.addJavaVersion("Java ${project.java_version}")
+    mainFile.addGameVersion(project.minecraft_version)
+    mainFile.addModLoader("NeoForge")
 
-    def mainFile = upload(projectId, shadowJar)
-	mainFile.releaseType = 'release'
-	mainFile.changelogType = "text"
-	mainFile.changelog = file("resources/changelog/${project.minecraft_version}-${project.version}.txt")
-	mainFile.addGameVersion(project.minecraft_version)
-	mainFile.addModLoader("NeoForge")
-	
-	mainFile.addRequirement('cyclops-core')
+    mainFile.addRequirement("cyclops-core")
 }
 
 modrinth {
-    if(secrets.modrinth_key) {
-        token = secrets.modrinth_key
-    } else if(System.getenv().GITHUB_ACTIONS && System.getenv().MODRINTH_KEY_SECRET) {
-        token = System.getenv().MODRINTH_KEY_SECRET
-    } else {
-        token = "DUMMY"
-    }
-    projectId = "3ANq2btA"
-    versionNumber = project.minecraft_version + '-' + project.mod_version
-    versionType = project.release_type
+    token = secrets.modrinthKey;
+    projectId = "${modrinth_project_id}"
+    versionNumber = project.minecraft_version + '-' + project.version
+    versionName = "${project.version} for NeoForge ${project.minecraft_version}"
+    versionType = secrets.build_number.equals("RELEASE") ? "release" : "beta"
     uploadFile = shadowJar
     gameVersions = [ project.minecraft_version ]
-	changelog = provider { file("resources/changelog/${project.minecraft_version}-${project.version}.txt").getText() }
-    dependencies { // A special DSL for creating dependencies
-      required.project "Z9DM0LJ4" // Cyclops Core
+    changelog = provider { secrets.changelog }
+
+    dependencies {
+        required.project "Z9DM0LJ4" // Cyclops Core
     }
 }
 

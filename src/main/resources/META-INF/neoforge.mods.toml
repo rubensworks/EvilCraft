@@ -1,35 +1,33 @@
 modLoader="javafml"
-loaderVersion="[2,)"
-issueTrackerURL="https://github.com/CyclopsMC/EvilCraft/issues"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/evilcraft"
-license="MIT"
+loaderVersion="${neoforge_loader_version_range}"
+issueTrackerURL="${issue_tracker_url}"
+displayURL="${display_url}"
+license="${license}"
 logoFile="logo.png"
-authors="rubensworks (aka kroeser)"
+authors="${mod_author}"
 [[mods]]
-modId="evilcraft"
-version="${file.jarVersion}"
-displayName="EvilCraft"
-updateJSONURL="https://raw.githubusercontent.com/CyclopsMC/Versions/master/neoforge_update/evilcraft.json"
-description='''
-An evil mod for Minecraft.
-'''
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+updateJSONURL="${neoforge_update_json_url}"
+description="${description}"
 [[accessTransformers]]
     file="META-INF/accesstransformer.cfg"
-[[dependencies.evilcraft]]
+[[dependencies.${mod_id}]]
     modId="cyclopscore"
     type="required"
-    versionRange="[1.25.1,)"
+    versionRange="[${cyclopscore_version_semver},)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.evilcraft]]
+[[dependencies.${mod_id}]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.2,)"
+    versionRange="[${neoforge_version},)"
     ordering="NONE"
     side="BOTH"
-[[dependencies.evilcraft]]
+[[dependencies.${mod_id}]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21.1,]"
+    versionRange="[${minecraft_version},]"
     ordering="NONE"
     side="BOTH"
