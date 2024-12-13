@@ -32,11 +32,7 @@ import org.apache.commons.lang3.tuple.ImmutableTriple;
 import org.apache.commons.lang3.tuple.Triple;
 import org.cyclops.cyclopscore.capability.item.ItemHandlerSlotMasked;
 import org.cyclops.cyclopscore.datastructure.SingleCache;
-import org.cyclops.cyclopscore.helper.BlockEntityHelpers;
-import org.cyclops.cyclopscore.helper.CraftingHelpers;
-import org.cyclops.cyclopscore.helper.LocationHelpers;
-import org.cyclops.cyclopscore.helper.MinecraftHelpers;
-import org.cyclops.cyclopscore.helper.WorldHelpers;
+import org.cyclops.cyclopscore.helper.*;
 import org.cyclops.cyclopscore.inventory.SimpleInventory;
 import org.cyclops.evilcraft.RegistryEntries;
 import org.cyclops.evilcraft.block.BlockSanguinaryEnvironmentalAccumulator;
@@ -296,7 +292,7 @@ public class BlockEntitySanguinaryEnvironmentalAccumulator extends BlockEntityWo
 
     @Override
     public boolean canWork() {
-        if(!forceLoadTanks && invalidLocations != null && !WorldHelpers.efficientTick(level, TANK_CHECK_TICK_OFFSET, getBlockPos())) {
+        if(!forceLoadTanks && invalidLocations != null && (level.isClientSide() || !WorldHelpers.efficientTick(level, TANK_CHECK_TICK_OFFSET, getBlockPos()))) {
             return invalidLocations.isEmpty();
         }
         forceLoadTanks = false;
