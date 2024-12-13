@@ -1,0 +1,8 @@
+As always, don't forget to backup your world before updating!
+Requires CyclopsCore version 1.25.1 or higher.
+
+Additions:
+* Add various item and block tags, Closes #1065
+
+Fixes:
+* Don't invoke WorldHelpers.efficientTick client-side
