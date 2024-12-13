@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "evilcraft:undead_planks_stairs"
+    "evilcraft:undead_planks_stairs",
+    "evilcraft:reinforced_undead_planks_stairs"
   ]
 }

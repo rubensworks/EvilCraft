@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "evilcraft:dark_gem_crushed"
+    "evilcraft:dark_gem_crushed",
+    "evilcraft:dull_dust"
   ]
 }
