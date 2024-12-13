@@ -5,6 +5,7 @@ org.cyclops.evilcraft.api.degradation
 org.cyclops.evilcraft.api.gameevent
 org.cyclops.evilcraft.api.tileentity.bloodchest
 org.cyclops.evilcraft.api.tileentity.purifier
+org.cyclops.evilcraft.armormaterial
 org.cyclops.evilcraft.block
 org.cyclops.evilcraft.blockentity
 org.cyclops.evilcraft.blockentity.tickaction
@@ -21,6 +22,7 @@ org.cyclops.evilcraft.client.render.block
 org.cyclops.evilcraft.client.render.blockentity
 org.cyclops.evilcraft.client.render.entity
 org.cyclops.evilcraft.client.render.model
+org.cyclops.evilcraft.component
 org.cyclops.evilcraft.core.algorithm
 org.cyclops.evilcraft.core.block
 org.cyclops.evilcraft.core.blockentity
@@ -47,7 +49,8 @@ org.cyclops.evilcraft.core.item
 org.cyclops.evilcraft.core.monster
 org.cyclops.evilcraft.core.recipe.type
 org.cyclops.evilcraft.core.weather
-org.cyclops.evilcraft.enchantment
+org.cyclops.evilcraft.enchantment.component
+org.cyclops.evilcraft.enchantment.entityeffect
 org.cyclops.evilcraft.entity.block
 org.cyclops.evilcraft.entity.effect
 org.cyclops.evilcraft.entity.item
@@ -61,12 +64,12 @@ org.cyclops.evilcraft.inventory.container
 org.cyclops.evilcraft.inventory.slot
 org.cyclops.evilcraft.item
 org.cyclops.evilcraft.loot.functions
+org.cyclops.evilcraft.loot.modifier
 org.cyclops.evilcraft.metadata
 org.cyclops.evilcraft.modcompat.baubles
 org.cyclops.evilcraft.network.packet
 org.cyclops.evilcraft.potion
 org.cyclops.evilcraft.proxy
-org.cyclops.evilcraft.world.biome
-org.cyclops.evilcraft.world.gen
+org.cyclops.evilcraft.sound
 org.cyclops.evilcraft.world.gen.feature
 org.cyclops.evilcraft.world.gen.structure
