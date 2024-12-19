@@ -47,7 +47,7 @@ public class ItemBucketEternalWater extends BucketItem {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player player, InteractionHand hand) {
-        ItemStack itemStack = player.getItemInHand(hand);
+        ItemStack itemStack = player.getItemInHand(hand).copy();
         HitResult position = this.getPlayerPOVHitResult(world, player, ClipContext.Fluid.SOURCE_ONLY);
         if(position != null && position.getType() == HitResult.Type.BLOCK) {
             BlockPos pos = BlockPos.containing(position.getLocation());
@@ -60,6 +60,7 @@ public class ItemBucketEternalWater extends BucketItem {
 
         InteractionResultHolder<ItemStack> result = super.use(world, player, hand);
         if(!result.getObject().isEmpty() && result.getObject().getItem() == Items.BUCKET) {
+            player.setItemInHand(hand, itemStack);
             return MinecraftHelpers.successAction(itemStack);
         }
 
