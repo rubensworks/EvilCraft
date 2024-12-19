@@ -1,6 +1,7 @@
 ## EvilCraft
 
 [![Build Status](https://github.com/CyclopsMC/EvilCraft/workflows/CI/badge.svg)](https://github.com/CyclopsMC/EvilCraft/actions?query=workflow%3ACI)
+[![Coverage Status](https://coveralls.io/repos/github/CyclopsMC/EvilCraft/badge.svg)](https://coveralls.io/github/CyclopsMC/EvilCraft)
 [![Crowdin](https://badges.crowdin.net/cyclopsmc-evilcraft/localized.svg)](https://crowdin.com/project/cyclopsmc-evilcraft)
 [![Download](https://img.shields.io/static/v1?label=Maven&message=GitHub%20Packages&color=blue)](https://github.com/CyclopsMC/packages/packages/770036)
 [![CurseForge](http://cf.way2muchnoise.eu/full_74610_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/evilcraft)

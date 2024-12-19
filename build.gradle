@@ -364,9 +364,22 @@ idea {
 }
 
 jacocoTestReport {
+    // Include unit and game test coverage
+    executionData fileTree(project.buildDir).include("jacoco/*.exec")
     reports {
         xml.required = true
         html.required = true
+    }
+}
+
+// Also measure coverage for game tests
+tasks.whenTaskAdded { task ->
+    if (task.name.equals('runGameTestServer')) {
+        jacocoTestReport.dependsOn test, task
+        jacoco {
+            toolVersion = "0.8.12"
+            applyTo task
+        }
     }
 }
 
