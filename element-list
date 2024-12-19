@@ -58,6 +58,7 @@ org.cyclops.evilcraft.entity.monster
 org.cyclops.evilcraft.entity.villager
 org.cyclops.evilcraft.event
 org.cyclops.evilcraft.fluid
+org.cyclops.evilcraft.gametest
 org.cyclops.evilcraft.infobook
 org.cyclops.evilcraft.infobook.pageelement
 org.cyclops.evilcraft.inventory.container
