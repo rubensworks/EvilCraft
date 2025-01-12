@@ -50,6 +50,7 @@ import java.util.UUID;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
+import java.util.NoSuchElementException;
 
 /**
  * {@link ITickAction} that is able to cook boxes with spirits.
@@ -153,7 +154,7 @@ public class BoxCookTickAction implements ITickAction<BlockEntitySpiritFurnace> 
         ItemStack itemStack = new ItemStack(Items.PLAYER_HEAD);
         try {
             itemStack.set(DataComponents.PROFILE, new ResolvableProfile(SkullBlockEntity.fetchGameProfile(playerName).get(1, TimeUnit.SECONDS).get()));
-        } catch (InterruptedException | ExecutionException | NullPointerException | TimeoutException e) {
+        } catch (InterruptedException | ExecutionException | NullPointerException | TimeoutException | 	NoSuchElementException e) {
             e.printStackTrace();
         }
         return itemStack;
