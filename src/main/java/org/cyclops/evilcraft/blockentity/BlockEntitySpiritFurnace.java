@@ -389,7 +389,7 @@ public class BlockEntitySpiritFurnace extends BlockEntityWorking<BlockEntitySpir
                 getInventory().setItem(slots[i], itemStack);
                 placed = true;
             } else {
-                if(produceStack.getItem() == itemStack.getItem()
+                if(ItemStack.isSameItemSameComponents(produceStack, itemStack)
                    && produceStack.getMaxStackSize() >= produceStack.getCount() + itemStack.getCount()) {
                     produceStack.grow(itemStack.getCount());
                     placed = true;

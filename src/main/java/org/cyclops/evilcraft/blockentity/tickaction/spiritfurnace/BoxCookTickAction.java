@@ -3,6 +3,7 @@ package org.cyclops.evilcraft.blockentity.tickaction.spiritfurnace;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
+import com.mojang.authlib.GameProfile;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -43,10 +44,7 @@ import org.cyclops.evilcraft.core.blockentity.upgrade.UpgradeSensitiveEvent;
 import org.cyclops.evilcraft.core.blockentity.upgrade.Upgrades;
 import org.cyclops.evilcraft.core.helper.MathHelpers;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
@@ -149,10 +147,11 @@ public class BoxCookTickAction implements ITickAction<BlockEntitySpiritFurnace> 
         return tile.getInventory().getItem(tile.getConsumeSlot());
     }
 
-    protected ItemStack getPlayerSkull(String playerName) {
+    protected ItemStack getPlayerSkull(UUID playerId) {
         ItemStack itemStack = new ItemStack(Items.PLAYER_HEAD);
         try {
-            itemStack.set(DataComponents.PROFILE, new ResolvableProfile(SkullBlockEntity.fetchGameProfile(playerName).get(1, TimeUnit.SECONDS).get()));
+            Optional<GameProfile> optionalGameProfile = SkullBlockEntity.fetchGameProfile(playerId).get(1, TimeUnit.SECONDS);
+            optionalGameProfile.ifPresent(gameProfile -> itemStack.set(DataComponents.PROFILE, new ResolvableProfile(gameProfile)));
         } catch (InterruptedException | ExecutionException | NullPointerException | TimeoutException e) {
             e.printStackTrace();
         }
@@ -189,7 +188,7 @@ public class BoxCookTickAction implements ITickAction<BlockEntitySpiritFurnace> 
                     possibleDrops.addAll(overridenDrops);
                 }
                 if(!BlockBoxOfEternalClosure.FORGOTTEN_PLAYER.equals(tile.getPlayerName())) {
-                    possibleDrops.add(new WeightedItemStack(getPlayerSkull(tile.getPlayerName()), 1));
+                    possibleDrops.add(new WeightedItemStack(getPlayerSkull(UUID.fromString(tile.getPlayerId())), 1));
                 }
                 WeightedItemStack weightedItemStack = WeightedItemStack.getRandomWeightedItemStack(possibleDrops, world.random);
                 ItemStack drop = weightedItemStack.getItemStackWithRandomizedSize(world.random);
