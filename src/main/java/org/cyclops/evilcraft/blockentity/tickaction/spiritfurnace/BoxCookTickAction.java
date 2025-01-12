@@ -154,7 +154,7 @@ public class BoxCookTickAction implements ITickAction<BlockEntitySpiritFurnace> 
         ItemStack itemStack = new ItemStack(Items.PLAYER_HEAD);
         try {
             itemStack.set(DataComponents.PROFILE, new ResolvableProfile(SkullBlockEntity.fetchGameProfile(playerName).get(1, TimeUnit.SECONDS).get()));
-        } catch (InterruptedException | ExecutionException | NullPointerException | TimeoutException | 	NoSuchElementException e) {
+        } catch (InterruptedException | ExecutionException | NullPointerException | TimeoutException | NoSuchElementException e) {
             e.printStackTrace();
         }
         return itemStack;
