@@ -193,7 +193,10 @@ public class BroomModifiers {
             public void onCollide(EntityBroom broom, Entity entity, float modifierValue) {
                 float damage = (modifierValue * (float) broom.getLastPlayerSpeed()) / 50F;
                 if (damage > 0) {
-                    entity.hurt(ExtendedDamageSources.broomDamage((LivingEntity) broom.getControllingPassenger()), damage);
+                    LivingEntity passenger = broom.getControllingPassenger();
+                    if (passenger != null) {
+                        entity.hurt(ExtendedDamageSources.broomDamage(passenger), damage);
+                    }
                 }
             }
         });
