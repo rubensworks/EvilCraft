@@ -15,13 +15,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityDimensions;
-import net.minecraft.world.entity.EntitySelector;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.MoverType;
-import net.minecraft.world.entity.Pose;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -43,6 +37,7 @@ import org.cyclops.evilcraft.core.helper.MathHelpers;
 import org.cyclops.evilcraft.item.ItemBroomConfig;
 
 import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -196,6 +191,7 @@ public class EntityBroom extends Entity {
     }
 
     @Override
+    @Nullable
     public LivingEntity getControllingPassenger() {
         List<Entity> list = this.getPassengers();
         return list.isEmpty() ? null : (LivingEntity) list.get(0);
