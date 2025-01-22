@@ -9,7 +9,7 @@
 
 All stable releases (including deobfuscated builds) can be found on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/evilcraft/files).
 
-More gameplay information can be found on [CurseForge](https://minecraft.curseforge.com/projects/evilcraft/).
+More gameplay information can be found on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/evilcraft).
 
 [Development builds](https://github.com/CyclopsMC/packages/packages/) are hosted as GitHub packages.
 
